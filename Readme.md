@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ibrohim Alimuhammedov](https://up.htmlacademy.ru/htmlcss/27/user/989547).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
