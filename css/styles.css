@@ -15,6 +15,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 40px;
   
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -95,12 +96,14 @@ ul {
 .main-header {
   display: flex;
   flex-direction: column;
-  padding: 55px 60px 0;
+  padding: 38px 60px 0;
+  position: relative;
 }
 
 .top-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .user-navigation {
@@ -124,7 +127,12 @@ ul {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  margin-top: 54px;
+  margin-top: 29px;
+  margin-bottom: 50px;
+}
+
+.index-header .main-navigation {
+  margin-bottom: 34px;
 }
 
 .site-nav {
@@ -144,6 +152,8 @@ ul {
 .main-logo {
   width: 163px;
   height: 35px;
+  position: absolute;
+  top: -17.5px;
 }
 
 .main-logo:hover {
@@ -234,55 +244,84 @@ ul {
   outline: 0;
 }
 
+.header-bottom {
+  margin-top: 28px;
+}
+
 .main-navigation {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-navigation .nav-link {
+  color: #000000;
+  font-family: "Gilroy", arial, sans-serif;
   font-size: 18px;
-  letter-spacing: 3.6px;
+  font-weight: 800;
   line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
-.main-navigation a:hover {
-  color: rgba(0, 0, 0, 0.6);
+.main-navigation .nav-link:hover {
+  opacity: .6;
 }
 
-.main-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3);
-  outline: 0;
+.main-navigation .nav-link:focus {
+  opacity: .3;
+}
+
+.main-navigation .nav-item:nth-child(1) {
+  width: 250px;
+  margin-right: 290px;
+}
+
+.main-navigation .nav-item:nth-child(2) {
+  margin-left: 0;
+  margin-right: 35px;
+}
+
+.main-navigation .nav-item:last-child {
+  margin-left: auto;
 }
 
 .catalog-menu {
-  display: none;
-  width: 1000px;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  letter-spacing: 0.15px;
-}
-
-.catalog-container {
-  display: flex;
-}
-
-.catalog-menu-list {
-  line-height: 36px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: -130px;
+  left: 0;
+  width: 1100px;
+  height: 130px;
+  padding-left: 60px;
+  background-color: #f7e296;
+  display: none;
 }
 
-.catalog-menu-list:nth-child(2) {
-  margin-right: 78px;
+.catalog-menu ul:nth-child(2) {
   margin-left: 58px;
+  margin-right: 77px;
 }
 
-.catalog-opener:hover + .catalog-menu {
-  display: flex;
-  outline: 0;
+.catalog-menu a {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  /* Text style for "В, иртуаль" */
+  letter-spacing: 0.15px;     
 }
 
-.catalog-opener:focus + .catalog-menu {
+.main-navigation .nav-item:first-child:hover .catalog-menu {
   display: flex;
-  outline: 0;
+}
+
+.main-navigation .nav-item:first-child > a:focus + .catalog-menu {
+  display: flex;
 }
 
 .slider {
@@ -292,6 +331,7 @@ ul {
 .slide {
   display: flex;
   padding-right: 60px;
+  align-items: center;
 }
 
 .slide-img {
@@ -666,6 +706,7 @@ ul {
   padding: 22px 68px 22px 200px;
 }
 
+
 .header-title {
   color: #000000;
   font-family: "Gilroy", Arial, sans-serif;
@@ -736,12 +777,13 @@ ul {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;;
+  padding-top: 12px;
 }
 
 .filtr-part {
   border: none;
-  border-top: 2px solid #000;
-  padding: 10px 0 30px;
+  border-top: 2px solid black;
+  padding: 0 0 30px 0;
   margin: 0;
 }
 

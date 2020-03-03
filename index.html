@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="main-header">
+    <header class="main-header index-header">
       <a href="#" class="main-logo">
         <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="Логотип девайса">
       </a>
@@ -26,48 +26,61 @@
         </div>
       </div>
       
-      <nav class="main-navigation">
-        <div class="catalog-side">
-          <a href="catalog.html" class="catalog-opener">Каталог товаров</a>
-          <div class="catalog-menu">
-            <div class="catalog-container">
-              <ul class="catalog-menu-list">
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Виртуальная реальность</a></li>
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Моноподы для селфи</a></li>
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Экшн-камеры</a></li>
+      <nav class="header-bottom">
+        <ul class="main-navigation">
+          <li class="nav-item">
+            <a href="#" class="nav-link catalog-opener">
+              Каталог товаров
+            </a>
+            
+            <div class="catalog-menu">
+              <ul>
+                <li class="catalog-item">
+                  <a href="#">Виртуальная еальность</a>          
+                </li>
+                <li class="catalog-item">
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#">Экшн-камеры</a>
+                </li>
               </ul>
-              <ul class="catalog-menu-list">
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Фитнеc-браслеты</a></li>
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Умные часы</a></li>
+              <ul>
+                <li class="catalog-item">
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-item">
+                  <a href="#">Умные часы</a>
+                </li>
               </ul>
-              <ul class="catalog-menu-list">
-                <li class="catalog-menu-item"><a href="#" class="catalog-menu-link">Квадрокоптеры</a></li>
+              <ul>
+                <li class="catalog-item">
+                  <a href="#">Квадрокоптеры</a>            
+                </li>
               </ul>
+              
             </div>
-          </div>
-        </div>
-        
-        <div class="site-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Доставка</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Доставка</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Гарантия</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Контакты</a>
+          </li>
+        </ul>
       </nav>
+
+      
     </header>
   </div>
   
   <main>
     <div class="container">
       <div class="slider">  
-        <div class="visually-hidden slide slide-1">
+        <div class="slide slide-1">
           <div class="slide-img">
             <img src="img/slider-1.png" alt="3 селфи палки">
           </div>
@@ -97,14 +110,16 @@
                 </li>
               </ul>
             </div>
-            <dl class="slide-desc">
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Длина палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
+            <ul class="slide-desc">
+              <li>
+                <span class="desc-top">800 м</span>
+                <span class="desc-bottom">Дальность полета</span>
+              </li>
+              <li>
+                <span class="desc-top">500 м</span> 
+                <span class="desc-bottom">Радиус поражения</span> 
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -139,13 +154,19 @@
                 </li>
               </ul>
             </div>
-            <dl class="slide-desc">
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
+            <ul class="slide-desc">
+              <li>
+                <span class="desc-top">800 м</span>
+                <span class="desc-bottom">Дальность полета</span>
+              </li>
+              <li>
+                <span class="desc-top">500 м</span> 
+                <span class="desc-bottom">Радиус поражения</span> 
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="slide slide-3">
+        <div class="slide slide-3 visually-hidden">
           <div class="slide-img">
             <img src="img/slider-3.png" alt="Квадрокоптер">
           </div>
