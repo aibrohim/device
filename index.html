@@ -82,13 +82,16 @@
   <main>
     <div class="container">
       <section class="slider">
-        <div class="slider-controls">
-          <label for="slider-1" class="dot-1 dot-active">Первый</label>
-          <label for="slider-2" class="dot-2">Второй</label>
-          <label for="slider-3" class="dot-3">Третий</label>
+        <input type="radio" class="visually-hidden" name="toggle" id="product-1" checked>
+        <input type="radio" class="visually-hidden" name="toggle" id="product-2">
+        <input type="radio" class="visually-hidden" name="toggle" id="product-3">
+        <div class="slider-controls">  
+          <label for="product-1" class="dot-1 dot">Первый</label>
+          <label for="product-2" class="dot-2 dot">Второй</label>
+          <label for="product-3" class="dot-3 dot">Третий</label>
         </div>
         <ul class="slider-list">  
-          <li class="slide slide-1">
+          <li class="slide slide-1" id="slide1">
             <div class="slide-img">
               <img src="img/slider-1.png" alt="3 селфи палки">
             </div>
@@ -122,7 +125,7 @@
             </div>
           </li>
           
-          <li class="slide slide-2 visually-hidden">
+          <li class="slide slide-2" id="slide2">
             <div class="slide-img">
               <img src="img/slider-2.png" alt="Фитнес-браслет">
             </div>
@@ -147,7 +150,7 @@
               </ul>
             </div>
           </li>
-          <li class="slide slide-3 visually-hidden">
+          <li class="slide slide-3" id="slide3">
             <div class="slide-img">
               <img src="img/slider-3.png" alt="Квадрокоптер">
             </div>
@@ -195,7 +198,7 @@
           </li>
           <li class="category-item">
             <a href="catalog.html" class="category-link">
-              <div class="category-box">
+              <div class="category-box box-end">
                 <img src="img/popular-2.png" class="category-img" alt="Картинка Моноподов для селфи">
               </div>
               <h3 class="category-title">Моноподы <br> для селфи</h3>
@@ -239,31 +242,31 @@
     
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
-      <div class="container">
+      <div class="container service-container">
         <div class="services-list"> 
           <ul class="services-menu">
-            <li>
-              <a href="#" class="button">Доставка</a>
+            <li class="service-tab service-tab-active">
+              <button type="button" class="button">Доставка</button>
             </li>
-            <li>
-              <a href="#" class="button">Гарантия</a>
+            <li class="service-tab">
+              <button type="button" class="button">Гарантия</button>
             </li>
-            <li>
-              <a href="#" class="button">Кредит</a>
+            <li class="service-tab">
+              <button type="button" class="button">Кредит</button>
             </li>
           </ul>
         </div>
-        <div class="service-info">
+        <div class="service-info service-info-active service-delivery">
           <h3 class="service-title">Доставка</h3>
           <p class="service-desc">
             Мы с удовольствием доставим ваш товар прямо к вашему <br> подъезду совершенно бесплатно! Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.
           </p>
         </div>
-        <div class="visually-hidden service-info">
+        <div class="service-info service-warranty">
           <h3 class="service-title">Гарантия</h3>
           <p class="service-desc">Если из-за возгорания купленного у нас товара у вас сгорит <br> дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
         </div>
-        <div class="visually-hidden service-info">
+        <div class="service-info service-credit">
           <h3 class="service-title">Кредит</h3>
           <p class="service-desc">Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
@@ -275,27 +278,27 @@
       <div class="container">
         <ul class="partners-list">
           <li class="partner">
-            <a href="#"><img src="img/logo-1.png" alt="Партнёр DJI" class="partner-img"></a>
-          </li>
+            <a href="#" class="partner-link partner-dji"><img src="img/logo-1.jpg" alt="Партнёр DJI" class="partner-img"></a>
+          </li> 
           <li class="partner">
-            <a href="#"><img src="img/logo-2.png" alt="Партнёр SP Gadgets" class="partner-img"></a>
-          </li>
+            <a href="#" class="partner-link partner-sp"><img src="img/logo-2.jpg" alt="Партнёр SP Gadgets" class="partner-img"></a>
+          </li> 
           <li class="partner">
-            <a href="#"><img src="img/logo-3.png" alt="Партнёр GoPro" class="partner-img"></a>
-          </li>
+            <a href="#" class="partner-link partner-gopro"><img src="img/logo-3.jpg" alt="Партнёр GoPro" class="partner-img"></a>
+          </li> 
           <li class="partner">
-            <a href="#"><img src="img/logo-4.png" alt="Партнёр VIVE" class="partner-img"></a>
-          </li>
+            <a href="#" class="partner-link partner-vive"><img src="img/logo-4.jpg" alt="Партнёр VIVE" class="partner-img"></a>
+          </li> 
         </ul>
       </div>
     </section>
     
     <div class="container columns">
-      <section class="about-us">
+      <section class="about-us section-mini">
         <h2 class="section-title">О нас</h2>
         <div class="about-content">
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p class="section-desc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="section-desc">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="transport-partners">
             <li class="transport-partner">Деловые Линии</li>
             <li class="transport-partner">Автотрейдинг</li>
@@ -305,7 +308,7 @@
         <a href="#" class="button">Подробнее о нас</a>
       </section>
       
-      <section class="contacts">
+      <section class="contacts section-mini">
         <h2 class="section-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <button class="map-button"><img src="img/map.jpg" width="560" height="222" alt="Карта"></button>
@@ -323,9 +326,9 @@
           </svg>
         </a>
         <ul class="footer-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">сравнить</a></li>
-          <li><a href="#">Корзина</a> </li>
+          <li><a href="#" class="footer-signin">Войти</a></li>
+          <li><a href="#" class="footer-compare">сравнить</a></li>
+          <li><a href="#" class="footer-bucket">Корзина</a> </li>
         </ul>
       </div>
       
