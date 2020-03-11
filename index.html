@@ -14,13 +14,15 @@
         <img src="img/svg-device/logo-device.svg" width="163" height="35" alt="Логотип девайса">
       </a>
       <div class="top-navigation">
-        <form action="http://echo.htmlacademy.ru" class="search-form" method="GET">
-          <label for="search-field" class="visually-hidden">Поиск по сайту</label>
-          <div class="search-container">
-            <input type="text" class="search-field" id="search-field" placeholder="Поиск по сайту">
-            <button type="submit" class="search-button">найти</button>
-          </div>
-        </form>
+        <div class="header-left">
+          <form action="http://echo.htmlacademy.ru" class="search-form" method="GET">
+            <label for="search-field" class="visually-hidden">Поиск по сайту</label>
+            <div class="search-container">
+              <input type="text" class="search-field" id="search-field" placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">найти</button>
+            </div>
+          </form>
+        </div>
         <div class="user-navigation"> 
           <a href="#" class="user-nav-link sign-in">Войти</a>
           <a href="#" class="user-nav-link compare">Сравнить</a>
@@ -29,44 +31,44 @@
       </div>
       
       <nav class="header-bottom">
-        <ul class="main-navigation">
-          <li class="nav-item">
-            <a href="#" class="nav-link catalog-opener">
-              Каталог товаров
-            </a>
+        <div class="header-left catalog-wrapper">
+          <a href="catalog.html" class="nav-link catalog-opener">
+            Каталог товаров
+          </a>
+          
+          <div class="catalog-menu">
+            <ul>
+              <li class="catalog-item">
+                <a href="#">Виртуальная еальность</a>          
+              </li>
+              <li class="catalog-item">
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="catalog-item">
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-item">
+                <a href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="catalog-item">
+                <a href="#">Квадрокоптеры</a>            
+              </li>
+            </ul>
             
-            <div class="catalog-menu">
-              <ul>
-                <li class="catalog-item">
-                  <a href="#">Виртуальная еальность</a>          
-                </li>
-                <li class="catalog-item">
-                  <a href="#">Моноподы для селфи</a>
-                </li>
-                <li class="catalog-item">
-                  <a href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="catalog-item">
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="catalog-item">
-                  <a href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="catalog-item">
-                  <a href="#">Квадрокоптеры</a>            
-                </li>
-              </ul>
-              
-            </div>
-          </li>
+          </div>
+        </div>
+        <ul class="main-navigation">
           <li class="nav-item">
             <a href="#" class="nav-link">Доставка</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-warranty">
             <a href="#" class="nav-link">Гарантия</a>
           </li>
           <li class="nav-item">
@@ -82,9 +84,9 @@
   <main>
     <div class="container">
       <section class="slider">
-        <input type="radio" class="visually-hidden" name="toggle" id="product-1" checked>
-        <input type="radio" class="visually-hidden" name="toggle" id="product-2">
-        <input type="radio" class="visually-hidden" name="toggle" id="product-3">
+        <input type="radio" class="visually-hidden slide-toggler" name="toggle" id="product-1" checked>
+        <input type="radio" class="visually-hidden slide-toggler" name="toggle" id="product-2">
+        <input type="radio" class="visually-hidden slide-toggler" name="toggle" id="product-3">
         <div class="slider-controls">  
           <label for="product-1" class="dot-1 dot">Первый</label>
           <label for="product-2" class="dot-2 dot">Второй</label>
@@ -256,7 +258,7 @@
             </li>
           </ul>
         </div>
-        <div class="service-info service-delivery service-info-active">
+        <div class="service-info service-delivery">
           <div class="service-info-wrapper">
             <h3 class="service-title">Доставка</h3>
             <p class="service-desc">
@@ -264,7 +266,7 @@
             </p>
           </div>
         </div>
-        <div class="service-info service-warranty">
+        <div class="service-info service-warranty service-info-active">
           <div class="service-info-wrapper">
             <h3 class="service-title">Гарантия</h3>
             <p class="service-desc">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
@@ -317,7 +319,9 @@
       <section class="contacts section-mini">
         <h2 class="section-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <button class="map-button"><img src="img/map.jpg" width="560" height="222" alt="Карта"></button>
+        <a href="map.html" class="map-button">
+          <img src="img/map.jpg" width="560" height="222" alt="Карта">
+        </a>
         <a href="#" class="button">Напишите нам</a>
       </section>
     </div>
@@ -363,5 +367,15 @@
       </div>
     </div>
   </footer>
+  
+  <div class="modal modal-write-us">
+    <h2 class="">
+      Напишите нам
+    </h2>
+    
+    <div class="modal-close">
+      
+    </div>
+  </div>
 </body>
 </html>
