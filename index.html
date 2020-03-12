@@ -369,13 +369,34 @@
   </footer>
   
   <div class="modal modal-write-us">
-    <h2 class="">
+    <h2 class="visually-hidden">
       Напишите нам
     </h2>
+
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="form-label">
+        Ваше имя:
+        <input type="text" name="name" class="form-input" placeholder="Имя Фамилия" required>
+      </label>
+      <label class="form-label">
+        Ваш e-mail:
+        <input type="email" name="email" class="form-input" placeholder="email@example.com" required>
+      </label>
+      <label class="form-label letter-area">
+        Текст письма:
+        <textarea name="letter" rows="5" class="form-textarea" placeholder="В свободной форме" required></textarea>
+      </label>
+
+      <button type="submit" class="button">Отправить</button>
+    </form>
     
-    <div class="modal-close">
-      
-    </div>
+    <button type="button" class="modal-close"></button>
+  </div>
+
+  <div class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/map-big.jpg" alt="Офис компании по адресу ул. Строителей, Санкт-Петербург" width="960px" height="559px">
+    <button type="button" class="modal-close"></button>
   </div>
 </body>
 </html>
