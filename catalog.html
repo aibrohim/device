@@ -4,7 +4,7 @@
   <meta charset="UTF-8">  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <title>Список товаров</title>
 </head>
 <body>
@@ -86,7 +86,7 @@
       <div class="crumbs">
         <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item"><a href="#" class="breadcrumb-hover">Главная</a></li>
+          <li class="breadcrumbs-item"><a href="index.html" class="breadcrumb-hover">Главная</a></li>
           <li class="breadcrumbs-item"><a href="#" class="breadcrumb-hover">каталог товаров</a></li>
           <li class="breadcrumbs-item"><a class="breadcrumb-disabled">Моноподы для селфи</a></li>
         </ul>
@@ -126,7 +126,7 @@
       
       <div class="catalog-content">
         <div class="container">
-          <section class="filtr-section">
+          <aside class="filtr-section">
             <form action="post">
               <fieldset class="filtr-part">
                 <legend class="filtr-title">Стоимость</legend>
@@ -207,9 +207,10 @@
               </fieldset> 
               <button type="submit" class="button">Показать</button>
             </form>
-          </section>
+          </aside>
           
           <section class="products">
+            <h2 class="visually-hidden">Список отсортированных товаров</h2>
             <div class="sort-container">
               <ul class="products-list">
                 <li class="product">
@@ -312,7 +313,7 @@
             <li><a href="#">Контакты</a></li>  
           </ul>
         </div>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       
       <div class="footer-bottom">
