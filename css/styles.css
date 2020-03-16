@@ -118,8 +118,11 @@ a {
   background-color: #fff;
 }
 
-.top-navigation {
+.index-header .top-navigation {
   margin-top: 38px;
+}
+
+.top-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,7 +932,7 @@ a {
 /* PARTNERS */
 
 .partners {
-  margin-bottom: 93px;
+  margin-bottom: 60px;
 }
 
 .partners-list {
@@ -1010,22 +1013,22 @@ a {
   line-height: 48px;
   letter-spacing: 0.21px;
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 40px;
 }
 
 .about-content {
   width: 462px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .section-desc:first-child {
   margin-top: 0;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 }
 
 .section-desc:nth-child(2) {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .transport-partners {
@@ -1057,6 +1060,14 @@ a {
   top: calc(50% - 4px);
 }
 
+.section-mini .button {
+  font-size: 18px;
+}
+
+.aboutus-button {
+  padding: 8px 22px;
+}
+
 /* Contact Us */
 
 .contacts {
@@ -1066,8 +1077,8 @@ a {
 .map-button {
   padding: 0;
   border: none;
-  margin-top: 44px;
-  margin-bottom: 89px;
+  margin-top: 38px;
+  margin-bottom: 65px;
   cursor: pointer;
   display: block;
 }
@@ -1164,23 +1175,19 @@ a {
   left: 0;
   top: 0;
   display: block;
-  background-color: #ffc600;
   opacity: 1.7;
 }
 
 .footer-signin::before {
-  -webkit-mask: url(../img/svg-device/user.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/user.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/user-gold.svg) 0 50% no-repeat;
 }
 
 .footer-compare::before {
-  -webkit-mask: url(../img/svg-device/compare.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/compare.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/compare-gold.svg) 0 50% no-repeat;
 }
 
 .footer-bucket::before {
-  -webkit-mask: url(../img/svg-device/cart.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/cart.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/cart-gold.svg) 0 50% no-repeat;
 }
 
 .footer-navigation a:hover {
@@ -1210,7 +1217,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-bottom: 68px;
 }
 
@@ -1304,25 +1311,21 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #fff;
   opacity: 0.3;
   -webkit-transition: .1s ease all;
   transition: .1s ease all;
 }
 
 .social-fb {
-  -webkit-mask: url(../img/svg-device/fb.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/fb.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/fb.svg) 0 50% no-repeat;
 }
 
 .social-insta {
-  -webkit-mask: url(../img/svg-device/instagram.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/instagram.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/instagram.svg) 0 50% no-repeat;
 }
 
 .social-twit {
-  -webkit-mask: url(../img/svg-device/twitter.svg) 0 50% no-repeat;
-  mask: url(../img/svg-device/twitter.svg) 0 50% no-repeat;
+  background: url(../img/svg-device/twitter.svg) 0 50% no-repeat;
 }
 
 .social-link:hover {
@@ -1354,10 +1357,14 @@ a {
   margin-left: auto;
 }
 
+.catalog-main-header > .top-navigation {
+  margin-top: 30px;
+}
+
 .crumbs {
   padding-left: 60px;
-  margin-top: 45px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 45px;
 }
 
 .section-divider {
@@ -1373,7 +1380,7 @@ a {
   font-weight: 800;
   line-height: 48px;
   letter-spacing: 0.17px; 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -1423,8 +1430,7 @@ a {
   top: 0;
   right: -40px;
   background-color: #000;
-  -webkit-mask: url(../img/svg-device/nav-arrow.svg) 50% 50% no-repeat;
-  mask: url(../img/svg-device/nav-arrow.svg) 50% 50% no-repeat;
+  background: url(../img/svg-device/nav-arrow.svg) 50% 50% no-repeat; 
 }
 
 .breadcrumbs-item:last-child::before {
@@ -1576,7 +1582,7 @@ a {
 
 .filtr-section {
   width: 200px;
-  padding-top: 70px;
+  padding-top: 65px;
   padding-right: 68px;
   padding-left: 60px;
   background-color: #efefef;
@@ -1607,7 +1613,7 @@ a {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
-  padding-top: 18px;
+  padding-top: 12px;
 }
 
 .filtr-part ul {
@@ -1639,8 +1645,8 @@ a {
 
 .range-controls {
   position: relative; 
-  margin-bottom: 16px;
-  margin-top: 41px;
+  margin-bottom: 5px;
+  margin-top: 37px;
 }
 
 .range-controls .scale {
@@ -1708,7 +1714,7 @@ a {
 
 .checkbox-list {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 18px;
 }
 
 .filtr-check {
@@ -1718,9 +1724,6 @@ a {
 
 .filtr-check-input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .styled-checkbox {
@@ -1759,18 +1762,12 @@ a {
 
 .radio-list {
   margin: 0;
-  margin-top: 33px;
+  margin-top: 20px;
 }
 
 .filtr-radio {
   padding-left: 38px;
   position: relative;
-}
-
-.filtr-radio-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .styled-radio {
@@ -1793,7 +1790,7 @@ a {
 /* Products */
 
 .products {
-  padding-top: 70px;
+  padding-top: 66px;
   margin-left: auto;
 }
 
@@ -1814,7 +1811,7 @@ a {
 
 .product {
   width: 360px;
-  margin-bottom: 43px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -1870,6 +1867,7 @@ a {
 
 .img-hover-wrapper {
   cursor: pointer;
+  background-color: #eee;
 }
 
 .img-hover-wrapper:hover .product-links {
@@ -1879,7 +1877,7 @@ a {
 }
 
 .product-text {
-  margin-top: 27px;
+  margin-top: 40px;
 }
 
 .product-text::before {
@@ -1972,7 +1970,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.91px;
   display: block;
-  padding: 30px;
+  padding: 25px 35px;
   -webkit-transition: .1s ease all;
   transition: .1s ease all;
 }
@@ -2153,12 +2151,9 @@ a {
   border: none;
   padding: 0;
   
-  background-color: #f0c52e;
   opacity: 0.5;
-  -webkit-mask: url(../img/svg-device/modal-close.svg) 0 0 no-repeat;
-  mask: url(../img/svg-device/modal-close.svg) 0 0 no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  background: url(../img/svg-device/modal-close.svg) 0 0 no-repeat;
+  background-size: cover;
   
   cursor: pointer;
   -webkit-transition: .1s ease all;
